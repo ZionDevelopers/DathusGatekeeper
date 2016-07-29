@@ -8,6 +8,7 @@
 		"*.svn*",
 		"*.txt",
 		".git*",
+		"*.bat",
 		".project",
 		".gitignore",
 		".buildpath",
