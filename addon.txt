@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"		"Nexus GateKeeper"
+	"version"	"2.0"
+	"up_date"	"01/01/2012"
+	"author_name"	"Nexus"
+	"author_email"	"talk@juliocesar.me"
+	"author_url"	"http://www.juliocesar.me"	
+	"info"		"Administrate gatekeeper"
+}
