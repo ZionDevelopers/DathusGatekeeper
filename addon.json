@@ -9,6 +9,8 @@
 		"*.txt",
 		".git*",
 		"*.bat",
+		"*.jpg",
+		"*.png",
 		".project",
 		".gitignore",
 		".buildpath",
