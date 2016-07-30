@@ -9,6 +9,7 @@
 		"*.txt",
 		".git*",
 		"*.bat",
+		"*.cmd",
 		"*.jpg",
 		"*.png",
 		".project",
