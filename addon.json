@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
 	"title"		:	"Nexus Gatekeeper",
 	"type"		:	"tool",
@@ -22,25 +21,4 @@
 		"LICENSE.md",
 		"README.md"
 	]
-=======
-{
-	"title"		:	"Nexus Gatekeeper",
-	"type"		:	"tool",
-	"tags"		:	[ "fun" ],
-	"description":	"Nexus Gatekeeper is a Player Country Blocker addon, That adds join messages and etc.",
-	"ignore"	:
-	[
-		"*.svn*",
-		"*.txt",
-		".git*",
-		".project",
-		".gitignore",
-		".buildpath",
-		".settings*",
-		"git-hooks-pre-commit",
-		"gitrid.sh",
-		"LICENSE.md",
-		"README.md"
-	]
->>>>>>> origin/master
 }
