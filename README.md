@@ -22,7 +22,7 @@ Simply clone this repository into your `addons` folder:
 #### License
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-To view a copy of this license, visit [Common Creative][License]
+To view a copy of this license, visit [Common Creative's Website][License]
 
 [Garry's Mod]: <http://garrysmod.com/>
 [workshop]: <http://steamcommunity.com/sharedfiles/filedetails/?id=734208849>
