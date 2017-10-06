@@ -18,7 +18,8 @@
 		".settings*",
 		"git-hooks-pre-commit",
 		"gitrid.sh",
-		"LICENSE.md",
-		"README.md"
+		"LICENSE",
+		"*.md",
+		"COPYING"
 	]
 }
