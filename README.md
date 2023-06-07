@@ -22,6 +22,16 @@ Simply clone this repository into your `addons` folder:
     cd "%programfiles(x86)%/Steam/SteamApps/common/GarrysMod/garrysmod/addons"
     git clone https://github.com/ZionDevelopers/DathusGatekeeper.git DathusGatekeeper
 
+
+### Server's ConVars
+Name, Default, Accept, Description
+dgk_whitelist_enabled, 0, 0/1, "Enable or Disable the Dathus' Gatekeeper Server Whitelist"
+dgk_whitepass_enabled, 1, 0,1, "Enable or Disable the Dathus' Gatekeeper Server Whitepass"
+dgk_countryblocker_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Country blocker"
+dgk_reservedslots_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Reserved Slots for Admins"
+dgk_scatman_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Server-wide Scatman's mode notification and music play"
+dgk_scatman_volume, 60, 0/100, "Change the Dathus' Gatekeeper Server-wide Scatman's mode music's volume"
+
 ### License
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.

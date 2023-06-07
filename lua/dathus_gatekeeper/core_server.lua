@@ -30,6 +30,8 @@ CreateConVar( "dgk_whitelist_enabled", 0, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable
 CreateConVar( "dgk_whitepass_enabled", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Server Whitepass" )
 CreateConVar( "dgk_countryblocker_enabled", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Country blocker" )
 CreateConVar( "dgk_reservedslots_enabled", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Reserved Slots for Admins" )
+CreateConVar( "dgk_scatman_enabled", 1,  {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Server-wide Scatman's mode notification and music play")
+CreateConVar( "dgk_scatman_volume", 60,  {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Change the Dathus' Gatekeeper Server-wide Scatman's mode music's volume")
 
 DathusGK.NotifyAll = function (message, type)
   net.Start("DathusGK-Notifier")
@@ -129,8 +131,11 @@ DathusGK.CheckPassword = function (steamID64, address, serverPassword, userPassw
   DathusGK.PopulateAdminsNBans() 
     
   if string.find(DathusGK.whitepass, steamID) and GetConVarNumber("dgk_whitepass_enabled") == 1 or string.find(clientIP, "192.168.") or clientIP == "127.0.0.1" then
-    DathusGK.NotifyAll("The Scatman is comming!", "error")
-    DathusGK.PrintOnServer("I'm a Scatman!")
+    -- Check for Scatman's mode
+    if GetConvarNumber("dgk_scatman_enabled") == 1 then
+      DathusGK.NotifyAll("The Scatman is comming!", "error")
+      DathusGK.PrintOnServer("I'm a Scatman!")
+    end
     return true
   end
         
