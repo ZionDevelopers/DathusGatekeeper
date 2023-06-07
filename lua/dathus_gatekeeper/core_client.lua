@@ -21,16 +21,14 @@ DathusGK.Colors = {
 }
 
 DathusGK.PlayScatman = function()
-  -- Check for Scatman's mode
-  if GetConvarNumber("dgk_scatman_enabled") == 1 then
-    sound.PlayURL ( "https://ia601201.us.archive.org/2/items/ItsScam/Scatman%20John%20-%20I%27m%20A%20scatman.mp3", "3d", function( mp3 ) 
-      if IsValid( mp3 ) then    
-        mp3:Play()        
-        mp3:SetVolume( GetConVarNumber("dgk_scatman_volume") )
-        mp3:SetPos( LocalPlayer():GetPos() )
-      end
-    end )
-  end
+  -- Play the scatman
+  sound.PlayURL ( "https://ia601201.us.archive.org/2/items/ItsScam/Scatman%20John%20-%20I%27m%20A%20scatman.mp3", "3d", function( mp3 ) 
+    if IsValid( mp3 ) then    
+      mp3:Play()        
+      mp3:SetVolume( 60 )
+      mp3:SetPos( LocalPlayer():GetPos() )
+    end
+  end )
 end
 
 DathusGK.PrintToPlayer = function(player, message, color)

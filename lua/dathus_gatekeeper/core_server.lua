@@ -31,7 +31,6 @@ CreateConVar( "dgk_whitepass_enabled", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable
 CreateConVar( "dgk_countryblocker_enabled", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Country blocker" )
 CreateConVar( "dgk_reservedslots_enabled", 1, {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Reserved Slots for Admins" )
 CreateConVar( "dgk_scatman_enabled", 1,  {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Enable or Disable the Dathus' Gatekeeper Server-wide Scatman's mode notification and music play")
-CreateConVar( "dgk_scatman_volume", 60,  {FCVAR_ARCHIVE, FCVAR_NOTIFY}, "Change the Dathus' Gatekeeper Server-wide Scatman's mode music's volume")
 
 DathusGK.NotifyAll = function (message, type)
   net.Start("DathusGK-Notifier")
