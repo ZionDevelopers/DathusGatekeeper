@@ -31,7 +31,6 @@ dgk_whitepass_enabled, 1, 0,1, "Enable or Disable the Dathus' Gatekeeper Server 
 dgk_countryblocker_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Country blocker"
 dgk_reservedslots_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Reserved Slots for Admins"
 dgk_scatman_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Server-wide Scatman's mode notification and music play"
-dgk_scatman_volume, 60, 0/100, "Change the Dathus' Gatekeeper Server-wide Scatman's mode music's volume"
 ```
 
 ### License
