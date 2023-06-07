@@ -33,6 +33,11 @@ dgk_reservedslots_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Res
 dgk_scatman_enabled, 1, 0/1, "Enable or Disable the Dathus' Gatekeeper Server-wide Scatman's mode notification and music play"
 ```
 
+### IP Database
+This addon comes with one, which you can download from Github, but is an outdated one, [GeoIPDatabase][] save as geoip-db.txt on data/dathus_gatekeeper/.
+
+If you manage to find an updated version of GeoIP1 Lite "GeoIPCountryCSV.zip" from maxmind send to us here, The version we got is from 2017-12-06.
+
 ### License
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
@@ -42,3 +47,4 @@ To view a copy of this license, visit [Common Creative's Website][License].
 [workshop]: <http://steamcommunity.com/sharedfiles/filedetails/?id=734208849>
 [Exsto]: <https://github.com/prefanatic/exsto>
 [License]: <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+[GeoIPDatabase]: <https://raw.githubusercontent.com/ZionDevelopers/DathusGatekeeper/master/data/dathus_gatekeeper/geoip-db.txt>
