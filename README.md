@@ -1,7 +1,9 @@
-Nexus Gatekeeper
+![Logo](https://raw.githubusercontent.com/ZionDevelopers/DathusGatekeeper/master/logo.png)
+
+Dathus' Gatekeeper
 =====
 
-Nexus Gatekeeper is a player Country Blocker for Garry's Mod,
+It's a player Country Blocker for Garry's Mod,
 Not just that, it's a full set of player join controller,
 This is a game addon for [Garry's Mod][] servers, NOT FOR SINGLEPLAYER!
 
@@ -11,14 +13,14 @@ Just download this addon by clicking on Download ZIP and extract the addon in ``
 
 ### Workshop Ready!
 
-Nexus Gatekeeper is now available via the Steam Workshop! Go to [its Workshop page][workshop].
+It's now available via the Steam Workshop! Go to [its Workshop page][workshop].
 
 ### Manual Installation
 
 Simply clone this repository into your `addons` folder:
 
     cd "%programfiles(x86)%/Steam/SteamApps/common/GarrysMod/garrysmod/addons"
-    git clone https://github.com/ZionDevelopers/NexusGatekeeper.git NexusGatekeeper
+    git clone https://github.com/ZionDevelopers/DathusGatekeeper.git DathusGatekeeper
 
 ### License
 
