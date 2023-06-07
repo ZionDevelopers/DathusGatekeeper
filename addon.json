@@ -1,8 +1,8 @@
 {
-	"title"		:	"Nexus Gatekeeper",
-	"type"		:	"tool",
+	"title"		:	"Dathus' Gatekeeper",
+	"type"		:	"ServerContent",
 	"tags"		:	[ "fun" ],
-	"description":	"Nexus Gatekeeper is a Player Country Blocker addon, That adds join messages and etc.",
+	"description":	"Dathus' Gatekeeper is a Player Country Blocker addon, That adds join messages and etc.",
 	"ignore"	:
 	[
 		"*.svn*",

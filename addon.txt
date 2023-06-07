@@ -1,10 +1,9 @@
 "AddonInfo"
 {
-	"name"		"Nexus GateKeeper"
-	"version"	"2.0"
-	"up_date"	"01/01/2012"
-	"author_name"	"Nexus"
-	"author_email"	"talk@juliocesar.me"
+	"name"		"Dathus' GateKeeper"
+	"version"	"2.1"
+	"up_date"	"2023-06-07"
+	"author_name"	"Dathus [BR]"
 	"author_url"	"http://www.juliocesar.me"	
 	"info"		"Administrate gatekeeper"
 }
