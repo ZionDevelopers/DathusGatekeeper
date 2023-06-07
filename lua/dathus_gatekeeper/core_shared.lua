@@ -16,6 +16,7 @@ Version 2.2
 AddCSLuaFile()
 
 DathusGK = {};
+-- Dathus' Gatekeeper version
 DathusGK.version = "2.2.0"
 DathusGK.started = os.clock()
 
@@ -27,7 +28,7 @@ local firstLog = true
 Msg( "\n/====================================\\\n")
 Msg( "||        Dathus' Gatekeeper        ||\n" )
 Msg( "||----------------------------------||\n" )
-loadingLog("Version " .. DathusCore.version)
+loadingLog("Version " .. DathusGK.version)
 loadingLog("Updated on 2023-06-07 02:25 AM")
 Msg( "\\====================================/\n\n" )
 
