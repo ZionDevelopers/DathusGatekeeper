@@ -20,6 +20,8 @@
 		"gitrid.sh",
 		"LICENSE",
 		"*.md",
-		"COPYING"
+		"logo.fw.png",
+		"logo.jpg",
+		"logo.png"
 	]
 }
