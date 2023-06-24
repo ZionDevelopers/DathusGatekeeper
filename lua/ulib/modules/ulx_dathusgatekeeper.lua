@@ -20,6 +20,8 @@ DathusGK.ULXPlugin = true
 DathusGK.version = "2.2.2"
 AddCSLuaFile()
 
+local firstLog = true
+
 Msg( "\n/====================================\\\n")
 Msg( "||        Dathus' Gatekeeper        ||\n" )
 Msg( "||----------------------------------||\n" )
@@ -28,7 +30,12 @@ loadingLog("Updated on 2023-06-24 10:00 AM")
 Msg( "\\====================================/\n\n" )
 
 DathusGK.PrintOnServer = function (message)
-  ULib.tsayColor(nil, false, Color(255, 255, 255), "Dathus' Gatekeeper: " .. message)  
+  if not firstLog then
+    print("Dathus' Gatekeeper: "..message)
+  else
+    print("\r\nDathus' Gatekeeper: "..message)
+    firstLog = false  
+  end
 end
 
 DathusGK.PrintOnServer("Initializing...") 
