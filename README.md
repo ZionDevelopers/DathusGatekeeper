@@ -1,8 +1,5 @@
 ![Logo](https://raw.githubusercontent.com/ZionDevelopers/DathusGatekeeper/master/logo.png)
 
-Dathus' Gatekeeper
-=====
-
 It's a player Country Blocker for Garry's Mod,
 Not just that, it's a full set of player join controller,
 This is a game addon for [Garry's Mod][] servers, NOT FOR SINGLEPLAYER!
@@ -38,6 +35,9 @@ This addon comes with one, which you can download from Github, but is an outdate
 
 If you manage to find an updated version of GeoIP1 Lite "GeoIPCountryCSV.zip" from maxmind send to us here, The version we got is from 2017-12-06.
 
+### Requirements
+You will need an IP database in the right format, And to use all the features you will need to use [ULX][] or [Exsto][].
+
 ### License
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
@@ -48,3 +48,4 @@ To view a copy of this license, visit [Common Creative's Website][License].
 [Exsto]: <https://github.com/prefanatic/exsto>
 [License]: <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 [GeoIPDatabase]: <https://raw.githubusercontent.com/ZionDevelopers/DathusGatekeeper/master/data/dathus_gatekeeper/geoip-db.txt>
+[ULX]: <https://github.com/TeamUlysses/ulx>
