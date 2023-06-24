@@ -17,7 +17,7 @@ AddCSLuaFile()
 
 DathusGK = {};
 -- Dathus' Gatekeeper version
-DathusGK.version = "2.2.1"
+DathusGK.version = "2.2.2"
 DathusGK.started = os.clock()
 
 DathusGK.ExstoPlugin = false
@@ -29,7 +29,7 @@ Msg( "\n/====================================\\\n")
 Msg( "||        Dathus' Gatekeeper        ||\n" )
 Msg( "||----------------------------------||\n" )
 loadingLog("Version " .. DathusGK.version)
-loadingLog("Updated on 2023-06-07 08:00 AM")
+loadingLog("Updated on 2023-06-24 10:00 AM")
 Msg( "\\====================================/\n\n" )
 
 DathusGK.PrintOnServer = function (message)

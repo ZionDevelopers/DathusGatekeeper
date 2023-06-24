@@ -13,6 +13,22 @@ Version 2.2
 
 ]]--
 
+--Setup Loading Log Formatation
+function loadingLog (text)
+  --Set Max Size
+  local size = 32
+  --If Text Len < max size
+  if(string.len(text) < size) then
+    -- Format the text to be Text+Spaces*LeftSize
+    text = text .. string.rep( " ", size-string.len(text) )
+  else
+    --If Text is too much big then cut and add ...
+    text = string.Left( text, size-3 ) .. "..."
+  end
+  --Log Messsage
+  Msg( "||  "..text.."||\n" )
+end
+
 if SERVER then
   AddCSLuaFile()
   AddCSLuaFile("dathus_gatekeeper/core_shared.lua") 

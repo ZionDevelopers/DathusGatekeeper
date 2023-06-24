@@ -87,6 +87,22 @@ DathusGK.PopulateAdminsNBans = function ()
         end
       end
     end)
+  elseif ULib ~= nil then
+    -- Get list of players 
+    local players = ULib.getUsers()
+        
+    -- Loop by players
+    for _, player in ipairs(players) do
+      -- Check if player is banned
+      if ULib.bans[player:SteamID()] then
+        DathusGK.banList[player:SteamID()] = true 
+      end
+      
+      -- Check if player is admin or super admin
+      if player:IsUserGroup("admin") or player:IsUserGroup("superadmin") then
+        DathusGK.adminList[player:SteamID()] = true
+      end
+    end    
   end 
 end
 

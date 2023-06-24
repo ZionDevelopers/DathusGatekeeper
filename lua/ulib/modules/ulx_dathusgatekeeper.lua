@@ -15,9 +15,9 @@ Version 2.2
 
 
 DathusGK = {};
+DathusGK.ULXPlugin = true
 -- Dathus' Gatekeeper version
 DathusGK.version = "2.2.2"
-DathusGK.ExstoPlugin = true
 AddCSLuaFile()
 
 Msg( "\n/====================================\\\n")
@@ -28,7 +28,7 @@ loadingLog("Updated on 2023-06-24 10:00 AM")
 Msg( "\\====================================/\n\n" )
 
 DathusGK.PrintOnServer = function (message)
-  exsto.Print( exsto_CONSOLE_LOGO, COLOR.NAME, "Dathus' Gatekeeper", COLOR.NORM, ": "..message)
+  ULib.tsayColor(nil, false, Color(255, 255, 255), "Dathus' Gatekeeper: " .. message)  
 end
 
 DathusGK.PrintOnServer("Initializing...") 
@@ -41,33 +41,12 @@ if SERVER then
     
   DathusGK.PrintOnServer("Loading Server CORE....")  
   include("dathus_gatekeeper/core_server.lua")   
+  
+  hook.Add("PlayerInitialSpawn", "DathusGK-InitialSpawn", DathusGK.PlayerInitialSpawn)  
+  hook.Add("PlayerDisconnected", "DathusGK-Leave", DathusGK.PlayerDisconnected)
+  hook.Add("CheckPassword", "DathusGK-Checker", DathusGK.CheckPassword)
 elseif CLIENT then
   DathusGK.PrintOnServer("Loading Client CORE....") 
   include("dathus_gatekeeper/core_client.lua") 
 end
 
-local PLUGIN = exsto.CreatePlugin()
-
-PLUGIN:SetInfo({
-  Name = "Dathus' GateKeeper V2",
-  ID = "dathus_gatekeeper_v2",
-  Desc = "Dathus' GateKeeper!",
-  Owner = "Dathus [BR]"
-})
-
-function PLUGIN:Init()  
-end
-    
-function PLUGIN:PlayerInitialSpawn (ply)
-  return DathusGK.PlayerInitialSpawn(ply)  
-end
-  
-function PLUGIN:PlayerDisconnected(ply) 
-  return DathusGK.PlayerDisconnected(ply)  
-end
-
-function PLUGIN:CheckPassword( steamID64, address, serverPassword, userPassword, name)
-  return DathusGK.CheckPassword(steamID64, address, serverPassword, userPassword, name)
-end
-
-PLUGIN:Register()
