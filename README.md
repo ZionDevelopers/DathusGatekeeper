@@ -43,6 +43,11 @@ You will need an IP database in the right format, And to use all the features yo
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 To view a copy of this license, visit [Common Creative's Website][License].
 
+
+If this add-on helped you please consider donating: <br />
+[![Donate](https://playx.juliocesar.me/img/donate.png)][Donate]
+
+[Donate]: <https://www.paypal.com/donate/?hosted_button_id=VTNGLBF6ZV8FC>
 [Garry's Mod]: <http://garrysmod.com/>
 [workshop]: <http://steamcommunity.com/sharedfiles/filedetails/?id=734208849>
 [Exsto]: <https://github.com/prefanatic/exsto>
